@@ -1,4 +1,0 @@
-.src/br/com/gui/Card.java
-.src/br/com/gui/Deck.java
-.src/br/com/gui/Usuario.java
-.src/br/com/gui/implementacao/DeckTest.java
