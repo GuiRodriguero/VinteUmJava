@@ -8,7 +8,7 @@ import br.com.gui.*;
 public class DeckTest {
 	public static void main(String[] args) {
 
-		String escolha[] = {"Sim", "Não"}; // opções do JOptionPane
+		String escolha[] = {"Sim", "Nao"}; // opcoes do JOptionPane
 
         Deck myDeck = new Deck();
         myDeck.shuffle(); // embaralha a array de cartas
@@ -39,16 +39,16 @@ public class DeckTest {
             			Card carta = myDeck.dealCard(); //pega uma carta
         	        	JOptionPane.showMessageDialog(null, "Sua carta: " + carta);//mostra a carta
         	        	
-        	        	String cartaFace = carta.mostrarFace();//manda só a face para o método de contar pontuação
-        	        	myDeck.contarPontuacao(cartaFace, jogador);//método de contar pontuação
+        	        	String cartaFace = carta.mostrarFace();//manda so a face para o mÃ©todo de contar pontuacao
+        	        	myDeck.contarPontuacao(cartaFace, jogador);//metodo de contar pontuacao
         	        	
-                		JOptionPane.showMessageDialog(null, "Pontuação: " + jogador.getPontuacao());//mostra a pontuação
+                		JOptionPane.showMessageDialog(null, "PontuaÃ§Ã£o: " + jogador.getPontuacao());//mostra a pontuacao
         	        	
         	        	cartas.add(carta);//manda a carta para a arraylist
         	        	myDeck.setCartas(cartas);//seta a carta para dar o get depois
         	        	
         	        	
-        	        	JOptionPane.showMessageDialog(null, "Cartas: " + myDeck.getCartas());//mostra todas as cartas até agora
+        	        	JOptionPane.showMessageDialog(null, "Cartas: " + myDeck.getCartas());//mostra todas as cartas atÃ© agora
         	        	continua = jogador.pedirCarta(simNao);
             		}
         	}
